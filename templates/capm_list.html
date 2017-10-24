@@ -1,0 +1,6 @@
+<h1>test</h1>
+<ul>
+    {% for capm in capms %}
+    <li><a href="{% url 'capm:detail' capm.id %}">{{ capm.id }}</a></li>
+    {% endfor %}
+</ul>
